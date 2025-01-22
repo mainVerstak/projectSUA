@@ -840,7 +840,8 @@ body {
 }
 
 .tabs-style_wrap .tabs-style__outer {
-  max-width: 100%;
+  max-width: calc(100% + 20px);
+  width: calc(100% + 20px);
   margin: 0 -10px -10px;
 }
 
@@ -2561,6 +2562,14 @@ body {
   font-size: 14px;
   line-height: 1.7;
   color: #4E697B;
+}
+
+.trust-info__note a {
+  text-decoration: underline;
+}
+
+.trust-info__note a:hover {
+  color: #1D5CE3;
 }
 
 .trust-info__list {
@@ -5295,6 +5304,8 @@ body {
     width: auto;
     height: 38px;
     line-height: 18px;
+    font-size: 13px;
+    font-weight: 500;
   }
 
   .guarantee-item__text-item {
@@ -5463,7 +5474,7 @@ body {
 
 @media screen and (max-width: 479px) {
   .tabs-style_wrap .tabs-style__item {
-    width: 100%;
+    width: calc(100% - 20px);
   }
 
   .slider-review .swiper-slide {

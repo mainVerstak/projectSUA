@@ -220,21 +220,26 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     })
   });
+  let dropAnimationDuration = 300;
   function dropShow(item, drop) {
     drop.style.maxHeight = drop.scrollHeight + "px";
+    drop.style.transitionDuration = dropAnimationDuration + 'ms';
     item.classList.add('_active');
     setTimeout(function () {
       drop.style.maxHeight = "";
-    }, 400);
+      drop.style.overflow = "visible";
+    }, dropAnimationDuration + 10);
   }
   function dropHide(item, drop) {
     drop.style.maxHeight = drop.offsetHeight + "px";
+    drop.style.transitionDuration = dropAnimationDuration + 'ms';
+    drop.style.overflow = null;
     setTimeout(function () {
       item.classList.remove('_active');
     }, 10);
     setTimeout(function () {
       drop.style.maxHeight = "";
-    }, 400);
+    }, dropAnimationDuration + 10);
   }
   //-show sample link + promo code
 
