@@ -525,7 +525,7 @@ document.addEventListener("DOMContentLoaded", function () {
     container.classList.add('slider-team-' + index);
     let swiperTeam = new Swiper(".slider-team-" + index, {
       slidesPerView: 'auto',
-      spaceBetween: 20,
+      spaceBetween: 19,
       touchEventsTarget: 'container',
       observer: true,
       observeParents: true,
