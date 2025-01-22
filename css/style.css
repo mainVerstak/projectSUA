@@ -3392,15 +3392,6 @@ body {
   flex: 1;
 }
 
-.info-article__content .js-tab-content {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.info-article__content .js-tab-content:last-child {
-  margin-bottom: 0;
-}
-
 .info-article__formatting {
   font-size: 16px;
   color: #4E697B;
@@ -4670,6 +4661,19 @@ body {
 
   .info-article__sidebar {
     display: none;
+  }
+
+  .info-article__content {
+    flex: 1;
+  }
+
+  .info-article__content .js-tab-content {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .info-article__content .js-tab-content:last-child {
+    margin-bottom: 0;
   }
 
   .info-article-item:not(._active) .info-article-item__text {
